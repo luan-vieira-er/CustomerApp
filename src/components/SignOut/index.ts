@@ -1,0 +1,1 @@
+export { SingOut } from './SingOut';
