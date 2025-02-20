@@ -30,7 +30,7 @@ export const FormSignIn: React.FC<IFormSign> = ({ onSubmit }) => {
       <S.Container>
         <div>
           <div className='centerText'>
-            Olá, seja bem-vindo!
+            Olá, seja bem-vindo!!
           </div>
           <div className='input'>
             <TextField
