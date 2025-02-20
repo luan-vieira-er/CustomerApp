@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "start": "env-cmd -f .env.local vite",
+    "start": "env-cmd -f .env.local vite --host",
     "build:dev": "env-cmd -f .env.dev vite build",
     "build:hml": "env-cmd -f .env.hml vite build",
     "build:prd": "env-cmd -f .env.prd vite build",
