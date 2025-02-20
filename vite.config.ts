@@ -5,7 +5,8 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 export default defineConfig({
   plugins: [react(), tsconfigPaths()],
   server: {
-    port: 3030
+    port: 3030,
+    allowedHosts: ['localhost', '127.0.0.1', 'customer-lb-1291552512.us-east-2.elb.amazonaws.com'],
   },
   preview: {
     port: 8080

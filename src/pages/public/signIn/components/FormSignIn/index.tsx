@@ -1,14 +1,8 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { FiInfo } from 'react-icons/fi';
-import {
-  faEye,
-  faEyeSlash,
-  faUser,
-  faLock,
-} from '@fortawesome/free-solid-svg-icons';
 
-import { Button, Icon, renderErrors } from 'components';
+import { Button, renderErrors } from 'components';
 
 import { useSignIn } from '../../context';
 import { IFormSign, ILoginForm } from '../../types';
@@ -16,11 +10,7 @@ import { intialValues } from '../../utils/intialValues';
 
 import * as S from './styles';
 import { ErrorDisplay } from 'components/MessageDisplay/styles';
-import { theme } from 'styles/constants';
-import logo from 'assets/react.svg';
 import TextField from '@mui/material/TextField';
-import { InputAdornment } from '@mui/material';
-import { SUBMIT_BUTTON_WIDTH } from 'utils/constants';
 
 export const FormSignIn: React.FC<IFormSign> = ({ onSubmit }) => {
   const { loading, listErrors, setListErrors } = useSignIn();
