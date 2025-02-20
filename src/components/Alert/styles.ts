@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Alert, AlertTitle } from '@mui/material';
 import styled from 'styled-components';
-import { theme } from 'styles/constants';
+import { theme } from '../../styles/constants';
 import { IStyledAlertProps } from './types';
 
 export const Container = styled.div``;

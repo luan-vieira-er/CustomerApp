@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import styled from 'styled-components';
-import { NAV_WIDTH_OPENED } from 'utils/constants';
+import { NAV_WIDTH_OPENED } from '../../../utils/constants';
 
 import { HIDE_DEFAULT_SIDE_BAR, SHOW_DEFAULT_SIDE_BAR } from './constants';
 import { MobileSideBarProps } from './types';

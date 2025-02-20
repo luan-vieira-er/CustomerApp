@@ -1,4 +1,4 @@
-import { BASE_CONTAINER } from 'components/constants';
+import { BASE_CONTAINER } from '../../components/constants';
 import styled from 'styled-components';
 
 export const ContainerLarge = styled.div`

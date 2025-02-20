@@ -1,7 +1,7 @@
 import { faCheck, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
-import { MAX_PASSWORD_LENGTH, MIN_PASSWORD_LENGTH } from 'utils/constants';
+import { MAX_PASSWORD_LENGTH, MIN_PASSWORD_LENGTH } from '../../utils/constants';
 import * as S from './styles';
 import { PasswordTypes } from './types';
 

@@ -1,6 +1,6 @@
 import React, { createContext, useCallback, useEffect, useState } from 'react';
 
-import { getFutureDateIncreasedBySeconds } from 'utils/date';
+import { getFutureDateIncreasedBySeconds } from '../utils/date';
 
 import {
   clearLocalStorage,

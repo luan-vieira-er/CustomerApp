@@ -4,7 +4,7 @@ import {
   faCheck,
   faXmark,
 } from '@fortawesome/free-solid-svg-icons';
-import { Icon } from 'components/Icon';
+import { Icon } from '../../components/Icon';
 
 import * as S from './styles';
 import { IPasswordTips } from './types';

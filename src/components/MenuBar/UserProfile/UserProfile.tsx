@@ -2,8 +2,8 @@ import React, { useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
 
-import AuthProvider from 'context/AuthProvider';
-import { useSideBar } from 'context/SideBar';
+import AuthProvider from '../../../context/AuthProvider';
+import { useSideBar } from '../../../context/SideBar';
 
 import {
   ContainerProfile,
@@ -12,8 +12,8 @@ import {
   StyledName,
 } from './styles';
 import { UserProfileProps } from './types';
-import { common } from 'styles/constants';
-import { routes } from 'routes/constants';
+import { common } from '../../../styles/constants';
+import { routes } from '../../../routes/constants';
 
 export const UserProfile: React.FC<UserProfileProps> = ({ isMobile }) => {
   const { data } = useContext(AuthProvider);

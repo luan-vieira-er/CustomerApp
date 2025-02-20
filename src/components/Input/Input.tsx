@@ -1,7 +1,7 @@
 import React from 'react';
 import * as S from './styles';
 import { type InputProps } from './types';
-import { renderErrors } from 'components/MessageDisplay';
+import { renderErrors } from '../../components/MessageDisplay';
 import { StyledWrapper } from './styles';
 
 export const Input: React.FC<InputProps> = React.forwardRef<

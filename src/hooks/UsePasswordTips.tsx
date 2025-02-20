@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { PasswordTips } from 'components';
+import { PasswordTips } from '../components';
 
 const hasNumberRegex = new RegExp('^(?=.*[0-9])');
 const hasUpperCaseLetterRegex = new RegExp('^(?=.*[A-Z])');

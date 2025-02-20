@@ -1,6 +1,6 @@
 import React from 'react';
 import * as S from './styles';
-import { useMobile } from 'context/Mobile';
+import { useMobile } from '../../context/Mobile';
 import { ICustomList } from './types';
 
 export const CustomList: React.FC<ICustomList> = ({ title, content }) => {

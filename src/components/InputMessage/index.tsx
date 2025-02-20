@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { faAddressBook } from '@fortawesome/free-solid-svg-icons';
-import { Icon } from 'components/Icon';
+import { Icon } from '../Icon';
 
 import * as S from './index.styles';
 import { InputMessageProps } from './index.types';

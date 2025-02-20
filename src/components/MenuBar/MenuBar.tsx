@@ -1,11 +1,11 @@
 import React from 'react';
-import { useMobile } from 'context/Mobile';
-import { useSideBar } from 'context/SideBar';
+import { useMobile } from '../../context/Mobile';
+import { useSideBar } from '../../context/SideBar';
 import * as S from './styles';
 import { NotificationModal } from './NotificationModal';
 import { faBell, faBell as faBells }  from '@fortawesome/free-solid-svg-icons';
 import { UserProfile } from './UserProfile';
-import { common } from 'styles/constants';
+import { common } from '../../styles/constants';
 
 export const MenuBar: React.FC = () => {
   const { open } = useSideBar();

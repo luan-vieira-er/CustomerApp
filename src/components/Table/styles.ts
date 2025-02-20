@@ -1,6 +1,6 @@
 import { styled } from '@mui/material';
 import { DataGrid } from '@mui/x-data-grid';
-import { theme } from 'styles/constants';
+import { theme } from '../../styles/constants';
 
 export const StyledDataGrid = styled(DataGrid)(() => ({
   '&': {

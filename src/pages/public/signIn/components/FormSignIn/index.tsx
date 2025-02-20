@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { FiInfo } from 'react-icons/fi';
 
-import { Button, renderErrors } from 'components';
+import { Button, renderErrors } from '../../../../../components';
 
 import { useSignIn } from '../../context';
 import { IFormSign, ILoginForm } from '../../types';
 import { intialValues } from '../../utils/intialValues';
 
 import * as S from './styles';
-import { ErrorDisplay } from 'components/MessageDisplay/styles';
+import { ErrorDisplay } from '../../../../../components/MessageDisplay/styles';
 import TextField from '@mui/material/TextField';
 
 export const FormSignIn: React.FC<IFormSign> = ({ onSubmit }) => {

@@ -1,8 +1,8 @@
 import { AxiosResponse } from 'axios';
-import { IUpdateData } from 'context/AuthProvider';
+import { IUpdateData } from '../../../../context/AuthProvider';
 
-import api from 'services/axios';
-import { loginUrl } from 'services/urls';
+import api from '../../../../services/axios';
+import { loginUrl } from '../../../../services/urls';
 import { IErrors, IUser } from 'types';
 import { ILoginResponse, ILoginForm } from '../types';
 

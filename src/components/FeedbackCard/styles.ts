@@ -1,5 +1,5 @@
 import { Player } from '@lottiefiles/react-lottie-player';
-import { Icon } from 'components/Icon';
+import { Icon } from '../../components/Icon';
 
 import { media } from 'styled-bootstrap-grid';
 import styled from 'styled-components';

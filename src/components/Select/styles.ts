@@ -1,6 +1,6 @@
 import { StylesConfig } from 'react-select';
 import styled, { css, DefaultTheme } from 'styled-components';
-import { common } from 'styles/constants';
+import { common } from '../../styles/constants';
 
 interface IWrapperProps {
   isErrored: boolean;

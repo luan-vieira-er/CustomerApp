@@ -1,7 +1,7 @@
 import React from 'react';
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 import { ButtonWrapper, Container, SuccessWrapper, StyledIcon } from './styles';
-import { Button } from 'components';
+import { Button } from '../../components';
 import { SuccessMessageProps } from './types';
 
 export const SuccessMessage: React.FC<SuccessMessageProps> = ({

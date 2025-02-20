@@ -5,7 +5,7 @@ import {
   IMessageProps,
   MessageType,
   useGlobalAlertData,
-} from 'context/GlobalAlertData';
+} from '../context/GlobalAlertData';
 
 export const useGlobalAlert = () => {
   const { setMessage, setMessagetype, setOpen } = useGlobalAlertData();

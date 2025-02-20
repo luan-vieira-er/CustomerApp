@@ -1,7 +1,7 @@
 import React from 'react';
 
 import * as S from './styles';
-import { useMobile } from 'context/Mobile';
+import { useMobile } from '../../context/Mobile';
 
 interface Props {
   children: React.ReactElement;

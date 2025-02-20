@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { MenuBar } from 'components/MenuBar';
-import { SideBar } from 'components/SideBar';
-import { useMobile } from 'context/Mobile';
-import { SideBarProvider } from 'context/SideBar';
+import { MenuBar } from '../../components/MenuBar';
+import { SideBar } from '../../components/SideBar';
+import { useMobile } from '../../context/Mobile';
+import { SideBarProvider } from '../../context/SideBar';
 
 import { Layout, Main } from './styles';
 

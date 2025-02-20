@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 
-import AuthProvider from 'context/AuthProvider';
+import AuthProvider from '../context/AuthProvider';
 
 import RoutesPrivate from './private';
 import RoutesPublic from './public';

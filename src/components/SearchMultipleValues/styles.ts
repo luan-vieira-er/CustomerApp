@@ -1,4 +1,4 @@
-import { Button } from 'components';
+import { Button } from '../../components';
 import styled from 'styled-components';
 
 export const SearchContainer = styled.div`

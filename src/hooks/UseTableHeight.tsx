@@ -1,6 +1,6 @@
 import React, { RefObject } from 'react';
 
-import { useMobile } from 'context/Mobile';
+import { useMobile } from '../context/Mobile';
 
 const UseTableHeigth = (ref: RefObject<HTMLDivElement>) => {
     const { mobile } = useMobile();

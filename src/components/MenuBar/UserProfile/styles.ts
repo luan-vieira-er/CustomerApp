@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from 'styled-components';
 
 import { SideBarProps } from './types';
-import { common, theme } from 'styles/constants';
+import { common, theme } from '../../../styles/constants';
 
 export const ContainerUserProfile = styled.div<SideBarProps>`
   display: flex;

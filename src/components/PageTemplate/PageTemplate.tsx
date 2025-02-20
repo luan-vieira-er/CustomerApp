@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { useMobile } from 'context/Mobile';
+import { useMobile } from '../../context/Mobile';
 
 import { ContainerTemplate } from './styles';
 

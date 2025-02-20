@@ -6,7 +6,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { faBell as faBellSolid } from '@fortawesome/free-solid-svg-icons';
 
-import { useSideBar } from 'context/SideBar';
+import { useSideBar } from '../../../context/SideBar';
 
 import { Notification } from './Notification';
 import {

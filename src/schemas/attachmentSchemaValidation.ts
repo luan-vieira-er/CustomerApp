@@ -1,6 +1,6 @@
-import { MAX_FILE_SIZE, FILE_EXTENSIONS, FILE_TYPES } from 'utils/constants';
-import { createRequiredMessage } from 'utils/mask';
-import { validateFileSize, validateFileType } from 'utils/validators';
+import { MAX_FILE_SIZE, FILE_EXTENSIONS, FILE_TYPES } from '../utils/constants';
+import { createRequiredMessage } from '../utils/mask';
+import { validateFileSize, validateFileType } from '../utils/validators';
 import * as Yup from 'yup';
 
 export const attachmentSchemaValidation = Yup.object({

@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { Stack } from '@mui/material';
-import { theme } from 'styles/constants';
+import { theme } from '../../styles/constants';
 import { StackProps } from './types';
 
 export const HeaderTitle = styled.h3`

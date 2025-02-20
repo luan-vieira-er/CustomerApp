@@ -4,7 +4,7 @@ import {
   HEADER_HEIGTH_DEFAULT,
   NAV_BOTTOM_HEIGHT,
   NAV_WIDTH_DEFAULT,
-} from 'utils/constants';
+} from '../../utils/constants';
 
 export const Layout = styled.div`
   width: 100%;

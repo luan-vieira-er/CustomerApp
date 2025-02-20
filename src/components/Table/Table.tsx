@@ -3,7 +3,7 @@ import React from 'react';
 import * as S from './styles';
 import { ITableProps } from './types';
 import { Box } from '@mui/material';
-import { DEFAULT_PAGE_SIZE } from 'utils/constants';
+import { DEFAULT_PAGE_SIZE } from '../../utils/constants';
 import { GRID_DEFAULT_LOCALE_TEXT } from './constants';
 
 export const Table: React.FC<ITableProps> = ({

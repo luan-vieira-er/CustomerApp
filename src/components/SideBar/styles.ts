@@ -3,10 +3,10 @@ import {
   NAV_WIDTH_DEFAULT,
   NAV_WIDTH_MOBILE_CLOSE,
   NAV_WIDTH_OPENED,
-} from 'utils/constants';
+} from '../../utils/constants';
 
 import { SideBarProps } from './types';
-import { common } from 'styles/constants';
+import { common } from '../../styles/constants';
 
 const getSideBarWidth = ({ open, mobile }: SideBarProps) => {
   const NAV_WIDTH_CLOSE = mobile ? NAV_WIDTH_MOBILE_CLOSE : NAV_WIDTH_DEFAULT;

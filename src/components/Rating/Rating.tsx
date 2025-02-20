@@ -1,6 +1,6 @@
 import React from 'react';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
-import { Icon } from 'components/Icon';
+import { Icon } from '../Icon';
 
 import * as S from './styles';
 import { IRatingProps } from './types';

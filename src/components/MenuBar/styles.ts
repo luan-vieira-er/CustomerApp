@@ -2,10 +2,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Badge, BadgeProps } from '@mui/material';
 
 import styled from 'styled-components';
-import { HEADER_HEIGTH_DEFAULT, NAV_WIDTH_DEFAULT } from 'utils/constants';
+import { HEADER_HEIGTH_DEFAULT, NAV_WIDTH_DEFAULT } from '../../utils/constants';
 
 import { ContainerProps } from './types';
-import { common } from 'styles/constants';
+import { common } from '../../styles/constants';
 
 export const Container = styled.div<ContainerProps>`
   position: fixed;

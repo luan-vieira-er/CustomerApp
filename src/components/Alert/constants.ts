@@ -4,7 +4,7 @@ import {
   faCircleInfo,
   faCircleExclamation,
 } from '@fortawesome/free-solid-svg-icons';
-import { theme } from 'styles/constants';
+import { theme } from '../../styles/constants';
 
 export const getThemeColorFromAlertType = (alertType: AlertType) => {
   switch (alertType) {

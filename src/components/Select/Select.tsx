@@ -3,7 +3,7 @@ import { Wrapper, Error, customStyles } from './styles';
 import SelectLib from 'react-select';
 import { OptionsProps, SelectProps } from './types';
 import { FiAlertTriangle } from 'react-icons/fi';
-import { useTheme } from 'context/Theme';
+import { useTheme } from '../../context/Theme';
 
 export const Select: React.FC<SelectProps> = ({
   name,

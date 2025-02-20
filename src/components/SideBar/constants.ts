@@ -3,7 +3,7 @@ import {
   faHome as Dashboard,
 } from '@fortawesome/free-solid-svg-icons';
 import { IMenu } from './types';
-import { routes } from 'routes/constants';
+import { routes } from '../../routes/constants';
 
 const subMenu: Array<IMenu> = [
   {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { faAddressBook } from '@fortawesome/free-solid-svg-icons';
 import { Box, Tooltip } from '@mui/material';
-import { InputText } from 'components/InputText';
+import { InputText } from '../../components/InputText';
 
 import { SearchItem } from './SearchItem';
 import * as S from './styles';

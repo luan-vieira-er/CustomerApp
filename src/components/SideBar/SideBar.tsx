@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { useMobile } from 'context/Mobile';
-import { useSideBar } from 'context/SideBar';
+import { useMobile } from '../../context/Mobile';
+import { useSideBar } from '../../context/SideBar';
 
 import logoMenuOpened from '../../assets/react.svg';
 import { MenuSection } from '../MenuSection';
@@ -15,10 +15,10 @@ import {
   ContainerMenuList,
   ContainerSignOut,
 } from './styles';
-import { SingOut } from 'components/SignOut';
-import { privateRole } from 'routes/constants';
+import { SingOut } from '../../components/SignOut';
+import { privateRole } from '../../routes/constants';
 import { IMenu } from './types';
-import { useLocalStorage } from 'hooks/AuthLocal';
+import { useLocalStorage } from '../../hooks/AuthLocal';
 
 export const SideBar: React.FC = () => {
   const { open } = useSideBar();

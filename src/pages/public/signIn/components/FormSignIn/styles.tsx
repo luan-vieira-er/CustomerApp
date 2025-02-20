@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 import { media } from 'styled-bootstrap-grid';
 import styled from 'styled-components';
-import { theme } from 'styles/constants';
+import { theme } from '../../../../../styles/constants';
 
 export const StyledForm = styled.form`
   z-index: 2;
