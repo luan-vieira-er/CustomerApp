@@ -47,6 +47,7 @@ export const getCustomersData = async ({
 
     return { customers, count };
   } catch (err: any) {
+    console.log('🤬 ~ err:', err)
     setListErrors(err.response.data);
   } finally {
     setLoading(false);

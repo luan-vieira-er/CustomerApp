@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { DashboardProvider, useDashboard } from './context';
-import { FaPlus, FaPencilAlt, FaTrash, FaCheck } from 'react-icons/fa';
+import { FaPlus, FaPencilAlt, FaTrash, FaCheck, FaMinus } from 'react-icons/fa';
 import { deleteCustomer, getCustomersData, insertCustomer, updateCustomer } from './services';
 import { IGetCustomersData, IGetCustomersRequestData, IInsertCustomersRequestForm, IUpdateCustomerRequestForm, IUpdateCustomerRequestFormId } from './types';
 import { common } from '../../../styles/constants';
@@ -28,6 +28,7 @@ import {
   SubmitButton,
   ModalText,
   PageWrapper,
+  ButtonGroupRight,
 } from './styles'
 import { InputAdornment, OutlinedInput } from '@mui/material';
 import { selectCustomer } from '../dashboard/services';
@@ -287,17 +288,11 @@ export const PageComponent: React.FC = () => {
             <div style={{ marginBottom: '12px' }}>
               Empresa: {formatCurrency(card.company_value)}
             </div>
-            <ButtonGroup>
+            <ButtonGroupRight>
               <Button title="Selecionar" onClick={handleSelectCustomer({id: card.id, selected: !card.selected})}>
-                {card.selected ? <FaCheck style={{ color: 'green' }} /> : <FaPlus/>}
+                <FaMinus style={{ color: 'red' }} />
               </Button>
-              <Button title="Editar" onClick={handleUpdateModalOpen(card.id)}>
-                <FaPencilAlt />
-              </Button>
-              <DeleteButton title="Excluir" onClick={handleDeleteModalOpen(card.id)}>
-                <FaTrash />
-              </DeleteButton>
-            </ButtonGroup>
+            </ButtonGroupRight>
           </Card>
         ))}
       </Grid>

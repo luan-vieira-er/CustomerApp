@@ -56,6 +56,12 @@ export const ButtonGroup = styled.div`
   gap: 60px;
 `;
 
+export const ButtonGroupRight = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  gap: 60px;
+`;
+
 export const Button = styled.button`
   padding: 8px;
   cursor: pointer;
