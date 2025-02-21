@@ -30,18 +30,17 @@ Para executar o projeto localmente, é necessário ter instalado:
 
 ## Configuração de Variáveis de Ambiente
 
-Caso a aplicação necessite de configurações específicas para acessar a API do backend ou outras integrações, crie um arquivo **`.env`** na raiz do projeto com as variáveis de ambiente necessárias. Por exemplo:
+Crie um arquivo **`.env`** na raiz do projeto com as variáveis de ambiente necessárias, exemplo:
 
-- **VITE_API_URL**=https://api.seudominio.com
-
+- **VITE_API_URL**=https://api.com/api/v1
 
 ## Instalação
 
 1. **Clone o repositório:**
 
 ```
-git clone https://seu-repositorio.git
-cd nome-do-repositorio-frontend
+git clone https://github.com/luan-vieira-er/CustomerApp.git
+cd CustomerApp
 ```
 2. **Instale as dependências:**
 
@@ -60,10 +59,10 @@ A aplicação ficará disponível no endereço configurado pelo Vite (geralmente
 ## Deploy
 O deploy deste projeto é automatizado através do GitHub Actions. Sempre que houver um push para a branch principal (ou outra branch configurada), o pipeline realiza as seguintes etapas:
 
-**Build:** Compilação da aplicação utilizando Vite.
-**Testes (não implementado):** Execução dos testes automatizados.
-**Upload para AWS S3:** A build final é enviada para um bucket S3 que rmazena os arquivos estáticos da aplicação.
-**Distribuição via CloudFront:** O conteúdo do bucket é distribuído globalmente pelo CloudFront, garantindo alta performance e disponibilidade.
+- **Build:** Compilação da aplicação utilizando Vite.
+- **Testes (não implementado):** Execução dos testes automatizados.
+- **Upload para AWS S3:** A build final é enviada para um bucket S3 que rmazena os arquivos estáticos da aplicação.
+- **Distribuição via CloudFront:** O conteúdo do bucket é distribuído globalmente pelo CloudFront, garantindo alta performance e disponibilidade.
 
 ## Próximos Passos
 Considerando o prazo e a complexidade, optei por entregar um produto funcional.

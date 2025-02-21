@@ -157,7 +157,6 @@ export const PageComponent: React.FC = () => {
 
   // Função para criar um novo cliente com validação
   const handleCreateClient = (values: IInsertCustomersRequestForm) => {
-    console.log("🚀 ~ handleCreateClient ~ values:", values)
     insertCustomer({
       insertCustomersRequestForm: {
         fullname: values.fullname,

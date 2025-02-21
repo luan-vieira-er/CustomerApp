@@ -19,7 +19,6 @@ export const MenuBar: React.FC = () => {
   const { open, setOpen } = useSideBar();
   const { mobile } = useMobile();
   const location = useLocation();
-  console.log("🚀 ~ location:", location)
 
   return (
     <S.Container menuOpen={open} mobile={mobile}>

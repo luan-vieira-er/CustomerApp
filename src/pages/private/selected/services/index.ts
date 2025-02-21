@@ -59,7 +59,6 @@ export const insertCustomer = async ({
     setListErrors,
   }: IInsertCustomers) => {
       setLoading(true);
-console.log("🚀 ~ insertCustomersRequestForm:", insertCustomersRequestData)
 
   try {
     const { data }: AxiosResponse<IGetCustomersResponse> = await api.post(
@@ -128,7 +127,6 @@ export const deleteCustomer = async ({
     if (data === null) {
         setListErrors([{ Key: '1', Message: 'Houve um erro ao deletar o cliente' }]);
     }
-    console.log("🚀 ~ data:", data)
         
     return { customer: data};
   } catch (err: any) {
