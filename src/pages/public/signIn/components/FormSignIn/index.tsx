@@ -6,7 +6,7 @@ import { Button, renderErrors } from '../../../../../components';
 
 import { useSignIn } from '../../context';
 import { IFormSign, ILoginForm } from '../../types';
-import { intialValues } from '../../utils/intialValues';
+import { initialValues } from '../../utils/initialValues';
 
 import * as S from './styles';
 import { ErrorDisplay } from '../../../../../components/MessageDisplay/styles';
@@ -30,12 +30,12 @@ export const FormSignIn: React.FC<IFormSign> = ({ onSubmit }) => {
       <S.Container>
         <div>
           <div className='centerText'>
-            Olá, seja bem-vindo!!
+            Olá, seja bem-vindo!
           </div>
           <div className='input'>
             <TextField
               fullWidth
-              defaultValue={intialValues.name}
+              defaultValue={initialValues.name}
               type='text'
               placeholder='Digite seu nome:'
               inputProps={{ maxLength: 200 }}

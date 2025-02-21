@@ -71,6 +71,8 @@ export const common = {
     primary700: '#008054',
     primary800: '#004E32',
     error: '#e90000',
+    white: '#FFFFFF',
+    black: '#000000',
     orange: '#EC6724',
     green: '#01e5ff',
     darkYellow: '#c69046',

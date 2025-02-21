@@ -2,7 +2,7 @@ import { AxiosResponse } from 'axios';
 import { IUpdateData } from '../../../../context/AuthProvider';
 
 import api from '../../../../services/axios';
-import { loginUrl } from '../../../../services/urls';
+import { customersUrl } from '../../../../services/urls';
 import { IErrors, IUser } from 'types';
 import { ILoginResponse, ILoginForm } from '../types';
 
@@ -22,19 +22,11 @@ export const login = async ({
   setLoading(true);
 
   try {
-    const { data }: AxiosResponse<ILoginResponse> = await api.post(
-      loginUrl,
-      loginForm,
-    );
-
-    if (data === null) {
-      setListErrors([{ Key: '1', Message: 'Houve um erro no login' }]);
-    }
-
-    const { accessToken } = data;
+    // const { accessToken } = data; //Substituir se necessitar login real
+    const accessToken = "FakeJWT";
 
     const user: IUser = {
-      name: data.firstName,
+      name: loginForm.name,
       profiles: ['admin']
     };
     

@@ -6,3 +6,8 @@ export interface ContainerProps {
 export interface NotificationIconProps {
   hasNotification: boolean;
 }
+
+export interface SideBarProps {
+  open: boolean;
+  mobile?: boolean;
+}

@@ -10,6 +10,7 @@ import {
   ContainerUserProfile,
   StyledIcon,
   StyledName,
+  StyledBoldName,
 } from './styles';
 import { UserProfileProps } from './types';
 import { common } from '../../../styles/constants';
@@ -30,14 +31,9 @@ export const UserProfile: React.FC<UserProfileProps> = ({ isMobile }) => {
     <Link to={routes.commom.profile} onClick={handleMobileSelected}>
       <div>
         <ContainerUserProfile isSelected={isSelected} open={open}>
-          <StyledIcon
-            icon={faUserCircle}
-            color={common.colors.orange}
-            size='3x'
-          />
-          {!!open && (
+          {(
             <ContainerProfile>
-              <StyledName>{username}</StyledName>
+              <StyledName>Olá, <StyledBoldName>{username}!</StyledBoldName></StyledName>
             </ContainerProfile>
           )}
         </ContainerUserProfile>

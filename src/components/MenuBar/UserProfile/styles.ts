@@ -33,7 +33,14 @@ export const StyledUserContent = styled.span`
 export const StyledName = styled(StyledUserContent)`
   margin-top: 10px;
   font-size: 12px;
-  color: ${common.colors.orange};
+  color: ${common.colors.black};
+`;
+
+export const StyledBoldName = styled(StyledUserContent)`
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: ${common.colors.black};
 `;
 
 export const StyledProfile = styled(StyledUserContent)`

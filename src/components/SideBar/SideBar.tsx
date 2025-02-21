@@ -10,12 +10,10 @@ import { privateMenu } from './constants';
 import { MobileSideBar } from './MobileSideBar';
 import {
   Container,
-  ContainerLogo,
   ContainerMenu,
   ContainerMenuList,
-  ContainerSignOut,
 } from './styles';
-import { SingOut } from '../../components/SignOut';
+
 import { privateRole } from '../../routes/constants';
 import { IMenu } from './types';
 import { useLocalStorage } from '../../hooks/AuthLocal';
@@ -55,14 +53,8 @@ export const SideBar: React.FC = () => {
     <>
       <Container open={open} mobile={mobile}>
         <ContainerMenuList>
-          <ContainerLogo open={open}>
-            <img src={logoMenuOpened} alt='Logo Menu Opened'></img>
-          </ContainerLogo>
           <ContainerMenu open={open}>{renderMenuList()}</ContainerMenu>
         </ContainerMenuList>
-        <ContainerSignOut>
-          <SingOut />
-        </ContainerSignOut>
       </Container>
       {mobile && <MobileSideBar />}
     </>

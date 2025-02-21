@@ -8,6 +8,7 @@ import Route from '../Route';
 const RoutesPrivate: React.FC = () => (
   <Switch>
     <Route path={routes.private.dashboard} component={Page.Dashboard} exact isPrivate />
+    <Route path={routes.private.selected} component={Page.Selected} exact isPrivate />
     <Redirect from='*' to={routes.private.dashboard} />
   </Switch>
 );

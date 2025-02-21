@@ -4,6 +4,7 @@ export const routes = {
   },
   private: {
     dashboard: '/dashboard',
+    selected: '/selected',
   },
   commom: {
     profile: '/perfil'

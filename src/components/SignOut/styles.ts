@@ -27,6 +27,6 @@ export const StyledTitle = styled.span`
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  color: white;
+  color: black;
   height: 11.5px;
 `;

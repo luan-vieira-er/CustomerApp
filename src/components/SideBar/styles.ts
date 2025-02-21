@@ -9,7 +9,7 @@ import { SideBarProps } from './types';
 import { common } from '../../styles/constants';
 
 const getSideBarWidth = ({ open, mobile }: SideBarProps) => {
-  const NAV_WIDTH_CLOSE = mobile ? NAV_WIDTH_MOBILE_CLOSE : NAV_WIDTH_DEFAULT;
+  const NAV_WIDTH_CLOSE = mobile ? NAV_WIDTH_MOBILE_CLOSE : 0;
   return open ? NAV_WIDTH_OPENED : NAV_WIDTH_CLOSE;
 };
 
@@ -17,11 +17,11 @@ export const Container = styled.div<SideBarProps>`
   position: fixed;
   z-index: 9998;
   height: 100vh;
+  display: ${(props) => (props.open ? 'flex' : 'none')};
   width: ${(props) => getSideBarWidth(props)};
-  background-color: ${common.colors.orange};
+  background-color: ${common.colors.black};
   transition: 0.5s;
   overflow-x: hidden;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
 
@@ -34,19 +34,6 @@ export const Container = styled.div<SideBarProps>`
 export const ContainerMenuList = styled.div`
   display: flex;
   flex-direction: column;
-`;
-
-export const ContainerLogo = styled.div<SideBarProps>`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  height: 56px;
-  margin-top: 30px;
-  padding: 0px 25px 0px 24px;
-  img {
-    width: 30%;
-  }
 `;
 
 export const ContainerButton = styled.div`
@@ -100,6 +87,3 @@ export const DivUser = styled.div`
   padding-bottom: 24px;
 `;
 
-export const ContainerSignOut = styled.div`
-  margin: 20px 0 20px 20px;
-`;

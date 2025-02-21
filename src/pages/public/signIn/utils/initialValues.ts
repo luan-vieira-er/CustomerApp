@@ -1,5 +1,5 @@
 import { ILoginForm } from '../types';
 
-export const intialValues: ILoginForm = {
+export const initialValues: ILoginForm = {
   name: ''
 };
