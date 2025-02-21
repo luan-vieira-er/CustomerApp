@@ -1,6 +1,6 @@
 # Frontend do Sistema de Gerenciamento de Clientes
 
-Acesse aqui: [Customer Portal](https://dmx616r1r0n7b.cloudfront.net/)
+Acesse aqui: [Customer Portal](https://dmx616r1r0n7b.cloudfront.net/) ou [Veja o vídeo de utilização](https://youtu.be/5wfcGZdMccQ)
 
 Este repositório contém o frontend do sistema de gerenciamento de clientes desenvolvido com **React** e **Vite**. A aplicação oferece uma interface responsiva e intuitiva para que os usuários possam interagir com o backend, permitindo operações como cadastro, listagem, atualização, exclusão e visualização dos clientes. A seguir, você encontrará informações sobre como configurar, executar e implantar a aplicação.
 
@@ -65,6 +65,14 @@ O deploy deste projeto é automatizado através do GitHub Actions. Sempre que ho
 **Upload para AWS S3:** A build final é enviada para um bucket S3 que rmazena os arquivos estáticos da aplicação.
 **Distribuição via CloudFront:** O conteúdo do bucket é distribuído globalmente pelo CloudFront, garantindo alta performance e disponibilidade.
 
+## Próximos Passos
+Considerando o prazo e a complexidade, optei por entregar um produto funcional.
+Isso significa que várias coisas podem melhorar e estão aquém do que o Figma pede.
+Alguns pontos que podem ser melhorados no futuro:
+- Máscara para campos de currency.
+- Ajustes na Sidebar.
+- Implementação de loadings.
+- Atenção à responsividade.
 
 ## Desenvolvimento de painel administrativo
 Tomando como base os 3 dias que precisei para desenvolver o projeto, podemos fazer as seguintes estimativas para o desenvolvimento do painel administrativo:
