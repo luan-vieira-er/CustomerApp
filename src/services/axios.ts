@@ -1,13 +1,8 @@
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 import axios from 'axios';
-import https from 'https';
-
-const agent = new https.Agent({
-  rejectUnauthorized: false,
-});
 
 const api = axios.create({
   baseURL: `${import.meta.env.VITE_APP_API_URL}`,
-  httpsAgent: agent,
 });
 
 api.interceptors.request.use((config: any) => {
@@ -47,4 +42,3 @@ api.interceptors.response.use(
 );
 
 export default api;
-
